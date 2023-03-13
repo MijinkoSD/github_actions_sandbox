@@ -1,6 +1,10 @@
 name: Code Test
 
-on: push
+on:
+  push:
+    branches:
+      - "*"
+      - "!no_status"
 
 jobs:
   code_test:
